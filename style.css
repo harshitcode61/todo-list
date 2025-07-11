@@ -1,0 +1,156 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #d67979;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 8px 9px;
+}
+
+header h1 {
+  text-align: center;
+  color: #2d3436;
+  margin-bottom: 100px;
+}
+
+/* Card Styling */
+.card {
+  background: rgb(86, 83, 83);
+  border-radius: 12px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06); */
+  padding: 24px;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+.card h2 {
+  margin-bottom: 16px;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+width: 90%;
+height: 50px;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #74b9ff;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #d63031;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.logout-btn:hover {
+  background-color: #ff7675;
+}
+
+/* Todo Input */
+.todo-input {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input input {
+  flex: 1;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f2f6;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+}
+
+.todo-list li:hover {
+  background-color: #dfe6e9;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #d63031;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #ff6b6b;
+}
+
+/* Message Text */
+.message {
+  margin-top: 10px;
+  color: #636e72;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .todo-input {
+    flex-direction: column;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .logout-btn {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firebase ToDo List</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Task Manager</h1>
+    </header>
+
+    <!-- Authentication Section -->
+    <section id="auth-section" class="card">
+      <h2>Welcome</h2>
+      <form id="authForm">
+        <input type="email" id="email" placeholder="Em  `1ail" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <div class="button-group">
+          <button type="button" id="signup">Sign Up</button>
+          <button type="button" id="login">Login</button>
+        </div>
+      </form>
+      <p id="message" class="message"></p>
+    </section>
+
+    <!-- Todo Section -->
+    <section id="todo-section" class="card" style="display:none">
+      <h2>Your ToDos</h2>
+      <div class="todo-input">
+        <input type="text" id="todoInput" placeholder="Add a new task..." />
+        <button id="addTodo">Add</button>
+      </div>
+      <ul id="todoList" class="todo-list"></ul>
+      <button type="button" id="logout" class="logout-btn" style="display:none">Logout</button>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
